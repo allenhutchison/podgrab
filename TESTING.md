@@ -253,6 +253,13 @@ Test coverage is automatically:
 
 ## Database Testing
 
+### Important: Parallel Test Limitations
+⚠️ **Note on Parallel Testing**: The current database layer uses a global `DB` variable (`db.DB`), which creates potential race conditions when running tests in parallel. For this reason:
+
+- Database tests should NOT use `t.Parallel()`
+- Run tests sequentially to avoid race conditions
+- Future improvement: refactor to use dependency injection instead of global DB
+
 ### In-Memory SQLite
 Tests use in-memory SQLite databases for fast, isolated testing:
 

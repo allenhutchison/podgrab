@@ -3,6 +3,7 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 
 	"github.com/gorilla/websocket"
@@ -34,7 +35,7 @@ type Message struct {
 func Wshandler(w http.ResponseWriter, r *http.Request) {
 	conn, err := wsupgrader.Upgrade(w, r, nil)
 	if err != nil {
-		fmt.Printf("Failed to set websocket upgrade: %+v\n", err)
+		log.Printf("Failed to set websocket upgrade: %+v\n", err)
 		return
 	}
 	defer conn.Close()

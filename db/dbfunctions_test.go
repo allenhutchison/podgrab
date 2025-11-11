@@ -314,8 +314,9 @@ func TestGetPodcastsByURLList(t *testing.T) {
 	err = GetPodcastsByURLList(urls, &podcasts)
 
 	// Note: This function uses First() instead of Find(), so it will only return one result
-	// This might be a bug in the original code, but we're testing actual behavior
+	// This appears to be a bug in the original code - should use Find() for multiple results
 	assert.NoError(t, err)
+	assert.Len(t, podcasts, 1, "GetPodcastsByURLList only returns 1 result due to using First() instead of Find()")
 }
 
 // Helper function to create string pointers

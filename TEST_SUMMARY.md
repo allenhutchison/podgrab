@@ -52,10 +52,10 @@ Tests for HTML/string sanitization and security functions.
 Tests for natural language time formatting.
 
 **Test Functions:**
-- `TestNatualTime` - 27 test cases for bidirectional time formatting
+- `TestNaturalTime` - 27 test cases for bidirectional time formatting
 - `TestPastNaturalTime` - 12 test cases for past times
 - `TestFutureNaturalTime` - 11 test cases for future times
-- `TestNatualTimeEdgeCases` - 3 test cases for edge cases
+- `TestNaturalTimeEdgeCases` - 3 test cases for edge cases
 
 **Key Features Tested:**
 - Past time formatting ("5 minutes ago", "yesterday")

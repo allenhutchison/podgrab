@@ -59,7 +59,7 @@ func main() {
 			return raw.Format("Jan 2 2006")
 		},
 		"naturalDate": func(raw time.Time) string {
-			return service.NatualTime(time.Now(), raw)
+			return service.NaturalTime(time.Now(), raw)
 			//return raw.Format("Jan 2 2006")
 		},
 		"latestEpisodeDate": func(podcastItems []db.PodcastItem) string {

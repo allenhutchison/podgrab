@@ -7,7 +7,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestNatualTime(t *testing.T) {
+func TestNaturalTime(t *testing.T) {
 	base := time.Date(2024, 1, 15, 12, 0, 0, 0, time.UTC)
 
 	tests := []struct {
@@ -152,7 +152,7 @@ func TestNatualTime(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			result := NatualTime(base, tt.value)
+			result := NaturalTime(base, tt.value)
 			assert.Equal(t, tt.expected, result)
 		})
 	}
@@ -310,7 +310,7 @@ func TestFutureNaturalTime(t *testing.T) {
 }
 
 // Edge case tests
-func TestNatualTimeEdgeCases(t *testing.T) {
+func TestNaturalTimeEdgeCases(t *testing.T) {
 	tests := []struct {
 		name     string
 		base     time.Time
@@ -339,7 +339,7 @@ func TestNatualTimeEdgeCases(t *testing.T) {
 
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
-			result := NatualTime(tt.base, tt.value)
+			result := NaturalTime(tt.base, tt.value)
 			assert.Equal(t, tt.expected, result)
 		})
 	}
