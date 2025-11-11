@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/akhilrex/podgrab/db"
-	"github.com/akhilrex/podgrab/model"
-	"github.com/akhilrex/podgrab/service"
+	"github.com/allenhutchison/podgrab/db"
+	"github.com/allenhutchison/podgrab/model"
+	"github.com/allenhutchison/podgrab/service"
 	"github.com/gin-gonic/gin"
 )
 
