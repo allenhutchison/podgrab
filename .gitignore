@@ -12,6 +12,13 @@
 *.out
 *.db
 
+# Build binary
+podgrab
+
+# Test coverage files
+coverage.out
+coverage.html
+
 # Dependency directories (remove the comment below to include it)
 # vendor/
 assets/*

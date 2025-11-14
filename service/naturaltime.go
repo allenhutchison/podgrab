@@ -6,7 +6,7 @@ import (
 	"time"
 )
 
-func NatualTime(base, value time.Time) string {
+func NaturalTime(base, value time.Time) string {
 	if value.Before(base) {
 		return pastNaturalTime(base, value)
 	} else {
