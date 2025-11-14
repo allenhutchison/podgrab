@@ -1,4 +1,4 @@
-module github.com/akhilrex/podgrab
+module github.com/allenhutchison/podgrab
 
 go 1.18
 
